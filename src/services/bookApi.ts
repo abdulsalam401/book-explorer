@@ -18,6 +18,10 @@ export const fetchBooks = async (query: string): Promise<Book[]> => {
             ...getMockRating(),
         }));
     } catch (error) {
+        if (axios.isAxiosError(error) && error.response?.status === 422) {
+            console.warn('API returned 422 (likely short query), returning empty list.');
+            return [];
+        }
         throw error;
     }
 };

@@ -20,7 +20,7 @@ export const HomeScreen = () => {
     const navigation = useNavigation<HomeScreenNavigationProp>();
 
     const handleSearch = useCallback(async (searchQuery: string) => {
-        if (!searchQuery.trim()) {
+        if (!searchQuery.trim() || searchQuery.length < 3) {
             setBooks([]);
             setError(null);
             return;
