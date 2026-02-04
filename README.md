@@ -26,8 +26,10 @@
    - Press `a` to open in Android Emulator or scan QR code with Expo Go.
 
 ## APK
-The APK is currently building on Expo Cloud. You can find it under your builds:
-[Expo Builds Dashboard](https://expo.dev/accounts/abdulsalam0110/projects/book-explorer/builds)
+You can download the latest APK from the **GitHub Releases** page:
+[Download APK from GitHub Releases](https://github.com/abdulsalam401/book-explorer/releases)
+
+(Alternatively, access build artifacts history on [Expo Dashboard](https://expo.dev/accounts/abdulsalam0110/projects/book-explorer/builds))
 
 ## Video Demo
 [Link to Demo Video]
